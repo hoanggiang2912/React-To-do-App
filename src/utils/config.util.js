@@ -1,3 +1,11 @@
+export const HOST = "https://react-to-do-app-server.onrender.com";
+
+export const API = {
+  task: `${HOST}/task`,
+  label: `${HOST}/label`,
+  epic: `${HOST}/epic`,
+};
+
 export const theming = {
   epic: {
     input: "!bg-secondary/20",

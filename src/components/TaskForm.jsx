@@ -100,7 +100,7 @@ function TaskForm() {
           aria-label="name"
           name="name"
           type="text"
-          className="input w-[550px]"
+          className="input 2xl:w-[550px] xl:w-[550px] md:w-[400px] w-full !bg-secondary/20 !px-0"
           placeholder="Add a task..."
           value={formState.name}
           onChange={(e) => {

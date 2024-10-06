@@ -63,7 +63,7 @@ function App() {
           <TaskForm />
 
           {/* TASKS SECTION */}
-          <section className="flex gap-8 h-full">
+          <section className="flex gap-8 h-full w-full 2xl:flex-center md:justify-start overflow-x-auto">
             {categories.map((category) => (
               <TaskBox key={category.name} category={category} tasks={tasks} />
             ))}

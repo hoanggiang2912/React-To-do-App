@@ -1,4 +1,5 @@
 import React from "react";
+import { API } from "../utils/config.util";
 
 const TaskContext = React.createContext();
 
@@ -44,7 +45,7 @@ const taskReducer = (state, action) => {
 const fetchTasks = async (dispatch) => {
   dispatch({ type: "LOADING" });
   try {
-    const response = await fetch("http://localhost:5000/task");
+    const response = await fetch(`${API.task}`);
 
     if (!response.ok) {
       throw new Error("Something went wrong!");
@@ -62,7 +63,7 @@ const addTask = async (dispatch, task) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`http://localhost:5000/task`, {
+    const response = await fetch(`${API.task}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +82,7 @@ const updateTask = async (dispatch, task) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`http://localhost:5000/task/${task.id}`, {
+    const response = await fetch(`${API.task}/${task.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -100,7 +101,7 @@ const deleteTask = async (dispatch, task) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`http://localhost:5000/task/${task.id}`, {
+    const response = await fetch(`${API.task}/${task.id}`, {
       method: "DELETE",
     });
     const data = await response.json();
@@ -115,7 +116,7 @@ const fetchLabels = async (dispatch) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch("http://localhost:5000/label");
+    const response = await fetch(`${API.label}`);
 
     if (!response.ok) {
       throw new Error("Something went wrong!");
@@ -133,7 +134,7 @@ const addLabel = async (dispatch, label) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`http://localhost:5000/label`, {
+    const response = await fetch(`${API.label}");`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -152,7 +153,7 @@ const fetchEpics = async (dispatch) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch("http://localhost:5000/epic");
+    const response = await fetch(`${API.epic}`);
 
     if (!response.ok) {
       throw new Error("Something went wrong!");
@@ -170,7 +171,7 @@ const addEpic = async (dispatch, epic) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`http://localhost:5000/epic`, {
+    const response = await fetch(`${API.epic}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
