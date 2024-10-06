@@ -91,7 +91,7 @@ function TaskForm() {
   };
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 4xl:w-[550px] sm:w-full">
       <form action="#" className="flex flex-col gap-3" onSubmit={handleSubmit}>
         {/* TASK INPUT */}
         <input
@@ -100,7 +100,7 @@ function TaskForm() {
           aria-label="name"
           name="name"
           type="text"
-          className="input 2xl:w-[550px] xl:w-[550px] md:w-[400px] w-full !bg-secondary/20 !px-0"
+          className="input w-full !bg-secondary/20 !px-0"
           placeholder="Add a task..."
           value={formState.name}
           onChange={(e) => {
@@ -116,7 +116,7 @@ function TaskForm() {
           <p className="text-danger text-md">{message}</p>
         )}
         {/* SELECT EPIC, LABEL, STATUS */}
-        <div className="flex gap-3 *:flex-1">
+        <div className="flex gap-3 *:flex-1 w-full flex-wrap">
           <select
             name="epic"
             id="epic"

@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div
-      className="bg-[#180828] filter w-full h-screen relative p-8 overflow-hidden"
+      className="bg-[#180828] filter w-full h-screen relative p-2 xl:p-8 sm:!p-3 overflow-hidden"
       style={{
         backgroundImage: "url('/src/assets/noise-bg-100.jpg')",
       }}

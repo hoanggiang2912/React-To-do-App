@@ -31,7 +31,7 @@
   }
 
   .select {
-    @apply bg-primary/20 hover:bg-primary/30 focus:bg-primary/30 !text-primary focus:text-primary placeholder:text-primary-800 focus:placeholder:text-primary-800 border-none rounded-lg h-10 !px-4 outline-none transition
+    @apply bg-primary/20 hover:bg-primary/30 focus:bg-primary/30 !text-primary focus:text-primary placeholder:text-primary-800 focus:placeholder:text-primary-800 border-none rounded-lg h-10 !px-4 outline-none transition min-w-40
   }
 
   .option {
