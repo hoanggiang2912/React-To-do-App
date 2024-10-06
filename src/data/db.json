@@ -1,0 +1,84 @@
+{
+  "task": [
+    {
+      "id": "eed4",
+      "name": "Learn HTML, CSS",
+      "epic": "Learning",
+      "label": [
+        "html"
+      ],
+      "status": "todo"
+    },
+    {
+      "id": "ab3f",
+      "name": "Learn JavaScript",
+      "epic": "Learning",
+      "label": [
+        "javascript"
+      ],
+      "status": "inProgress"
+    },
+    {
+      "id": "0d41",
+      "name": "Learning English",
+      "epic": "Learning",
+      "label": [
+        "english"
+      ],
+      "status": "done",
+      "date": "2024-10-06T09:49:48.316Z"
+    }
+  ],
+  "epic": [
+    {
+      "id": "659f",
+      "name": "Learning"
+    },
+    {
+      "id": "89ac",
+      "name": "Advertising"
+    },
+    {
+      "id": "733b",
+      "name": "Sport"
+    },
+    {
+      "id": "4565",
+      "name": "Figma"
+    },
+    {
+      "id": "ffb9",
+      "name": "Youtube"
+    },
+    {
+      "id": "7076",
+      "name": "Music"
+    }
+  ],
+  "label": [
+    {
+      "id": "d811",
+      "name": "html"
+    },
+    {
+      "id": "d184",
+      "name": "css"
+    },
+    {
+      "id": "bcf2",
+      "name": "javascript"
+    },
+    {
+      "id": "be5e",
+      "name": "pop"
+    },
+    {
+      "id": "5224",
+      "name": "nodejs"
+    },
+    {
+      "id": "0332",
+      "name": "english"
+    }
+  ]
+}

@@ -1,7 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   font-family: 'SVN-Gilroy', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-madimi {
+  font-family: 'Madimi One', cursive;
+}
+
+@layer {
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  /* .select {
+    @apply bg-blue-500/20 text-blue-500 border border-gray-300 hover:border-gray-400 p-4 rounded shadow focus:outline-none;
+  } */
+
+  .input {
+    @apply bg-white/20 hover:bg-white/30 focus:bg-white/30 !text-white focus:text-white placeholder:text-white/70 focus:placeholder:text-white/80 border-none rounded-lg h-10 !px-4 !outline-none transition
+  }
+
+  .select {
+    @apply bg-primary/20 hover:bg-primary/30 focus:bg-primary/30 !text-primary focus:text-primary placeholder:text-primary-800 focus:placeholder:text-primary-800 border-none rounded-lg h-10 !px-4 outline-none transition
+  }
+
+  .option {
+    @apply bg-white/40 hover:bg-primary/30 focus:bg-primary/30 text-primary focus:text-primary placeholder:text-primary-800 focus:placeholder:text-primary-800 border-none rounded-lg h-10 !px-4 outline-none transition
+  }
 }
