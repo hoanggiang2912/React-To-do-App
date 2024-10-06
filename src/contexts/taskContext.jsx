@@ -134,7 +134,7 @@ const addLabel = async (dispatch, label) => {
   dispatch({ type: "LOADING" });
 
   try {
-    const response = await fetch(`${API.label}");`, {
+    const response = await fetch(`${API.label}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -231,6 +231,7 @@ function TaskForm() {
                     className="brightness-200 hover:brightness-150 transition p-1"
                     isIconOnly
                     type="submit"
+                    onClick={(e) => onAddEpic(e, epic)}
                   >
                     <PlusIcon className="w-5 h-5" />
                   </Button>
@@ -286,6 +287,7 @@ function TaskForm() {
                     className={`${theming.label.bg} ${theming.label.text} transition p-1`}
                     isIconOnly
                     type="submit"
+                    onClick={(e) => onAddLabel(e, label)}
                   >
                     <PlusIcon className="w-5 h-5" />
                   </Button>
