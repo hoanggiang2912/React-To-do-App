@@ -28,9 +28,10 @@ function App() {
 
   return (
     <div
-      className="bg-[#180828] filter w-full h-screen relative p-2 xl:p-8 sm:!p-3 overflow-hidden"
+      className="bg-[#180828] filter w-full h-full relative p-2 xl:p-8 sm:!p-3 overflow-hidden"
       style={{
         backgroundImage: "url('/src/assets/noise-bg-100.jpg')",
+        height: "calc(100vh)",
       }}
     >
       {/* ABSOLUTE PATTERNS */}
@@ -55,8 +56,8 @@ function App() {
       )}
 
       {/* MAIN CONTENT */}
-      <main className="relative z-20">
-        <div className="flex flex-col flex-center mt-5 gap-8">
+      <main className="relative z-20 h-full pb-5">
+        <div className="flex flex-col flex-center mt-5 gap-8 h-full">
           {/* HEADER */}
           <Header />
           {/* FORM */}

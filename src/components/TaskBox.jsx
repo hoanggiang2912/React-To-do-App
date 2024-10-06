@@ -2,11 +2,11 @@ import Task from "./Task";
 
 function TaskBox({ category, tasks }) {
   return (
-    <section key={category.name} className="min-w-[350px] max-w-[400px]">
+    <section key={category.name} className="min-w-[350px] max-w-[400px] h-full">
       <h2 className="text-xl font-bold text-white font-madimi">
         {category.label}
       </h2>
-      <div className="flex flex-col gap-4 p-3 border rounded-lg border-white/10 mt-3 overflow-y-auto h-[450px]">
+      <div className="flex flex-col gap-4 p-3 border rounded-lg border-white/10 mt-3 overflow-y-auto h-full">
         {tasks &&
           tasks
             .filter((task) => task.status === category.name)
