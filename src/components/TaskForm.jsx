@@ -91,7 +91,7 @@ function TaskForm() {
   };
 
   return (
-    <div className="flex flex-col gap-3 4xl:w-[550px] sm:w-full">
+    <div className="flex flex-col gap-3 md:w-[550px] w-full">
       <form action="#" className="flex flex-col gap-3" onSubmit={handleSubmit}>
         {/* TASK INPUT */}
         <input
